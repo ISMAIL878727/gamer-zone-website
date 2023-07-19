@@ -280,12 +280,21 @@ main {
 .game-container {
     display: flex;
     justify-content: space-between;
+    max-width: 1440px;
+    margin: auto;
+    gap: 200px;
 }
 
 .box-text {
-    text-align: center;
-    padding-top: 80px;
-    padding-left: 100px;
+    width: 50%;
+}
+
+.image-parents {
+    width: 50%;
+}
+
+.image-one {
+    width: 100%;
 }
 
 .box-one {
@@ -348,8 +357,9 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 1400px;
+    margin: auto;
     flex-wrap: wrap;
-    padding-bottom: 20px;
 }
 
 /*footer section*/
@@ -421,6 +431,7 @@ footer {
     .nav-container,
     .header-container,
     .banner-system,
+    .game-container,
     .box-text {
         flex-direction: column;
     }
@@ -440,8 +451,82 @@ footer {
         width: auto;
     }
 
+    .image-parents {
+        width: 100%;
+    }
+.image-one img,
+.image-two{
+  width: 70%;
+}
+
+    .btn-single img{
+        width: 60px;
+        height: 60px;
+    }
+    .btn-single{
+        flex-basis: 0px;
+        font-size: 10px;
+
+    }
+
+    .btn-all {
+        gap: 8px;
+    }
+    footer{
+        width: 100%;
+    }
 
 
+}
+@media screen and (min-width: 576px) and (max-width: 960px){
+    .card-container,
+    .nav-container,
+    .header-container,
+    .banner-system,
+    .game-container,
+    .box-text {
+        flex-direction: column;
+    }
+
+    .image-banner,
+    .banner-container {
+        width: 100%;
+    }
+
+    .image-banner img {
+        width: 100%;
+    }
+
+    .card-container,
+    .image-one {
+        text-align: center;
+        width: auto;
+    }
+
+    .image-parents {
+        width: 100%;
+    }
+.image-one img,
+.image-two{
+  width: 70%;
+}
+
+    .btn-single img{
+        width: 60px;
+        height: 60px;
+    }
+    .btn-single{
+        flex-basis: 0px;
+        font-size: 10px;
+
+    }
+
+    .btn-all {
+        gap: 8px;
+    }
+    footer{
+        width: 100%;
+    }
 
 
 }
